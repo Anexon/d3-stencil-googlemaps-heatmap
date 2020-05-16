@@ -1,0 +1,26 @@
+{
+  "name": "googlemap-d3-canvas-heatmap",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.12.2",
+    "@stencil/router": "^1.0.1",
+    "@types/node": "^14.0.1",
+    "rollup-plugin-dotenv": "^0.2.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/googlemaps": "^3.39.5",
+    "@types/jest": "^25.2.2",
+    "d3": "^5.16.0",
+    "rxjs": "^6.5.5"
+  }
+}
