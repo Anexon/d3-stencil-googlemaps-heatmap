@@ -4,10 +4,14 @@ import dotenvPlugin from 'rollup-plugin-dotenv';
 // https://stenciljs.com/docs/config
 
 export const config: Config = {
+  namespace: 'heatmap',
   globalStyle: 'src/global/app.css',
   globalScript: 'src/global/app.ts',
   taskQueue: 'async',
   outputTargets: [
+    {
+      type: 'dist'
+    },
     {
       type: 'www',
       // comment the following line to disable service workers in production

@@ -12,7 +12,7 @@ export class AppRoot {
     return (
       <div>
         <header>
-          <h1>GoogleMaps + Canvas + d3 - Heatmap</h1>
+          <h1>GoogleMaps + Canvas - Heatmap</h1><span>(Multiple Radius)</span>
         </header>
 
         <main>
