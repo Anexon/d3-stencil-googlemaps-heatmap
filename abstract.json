@@ -1,0 +1,6 @@
+{
+    "project_name": "Mapa de Calor usando Canvas en GoogleMaps",
+    "tags": ["Stencil", "Typescript", "Googlemaps", "Canvas", "D3", "Data Visualization"],
+    "description": "Ejemplo de realización de mapa de calor basado en un mapa de niveles de grises para optimizar las acciones de pintado usando Canvas HTML y con superposición y navegación en GoogleMaps",
+    "repository_url": "https://github.com/Anexon/d3-stencil-googlemaps-heatmap"
+}
