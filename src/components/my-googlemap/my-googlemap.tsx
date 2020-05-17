@@ -1,8 +1,6 @@
 import { Component, Element, h } from '@stencil/core';
 import { gmapsInit } from '../utils/gmap';
 import { select } from 'd3-selection';
-import { scaleLinear } from 'd3-scale';
-import { max, min } from 'd3-array';
 
 @Component({
   tag: 'my-googlemap',
@@ -142,5 +140,13 @@ export class AppHome {
     ctxCircle.arc(-r2, -r2, radius, 0, Math.PI * 2, true);
     ctxCircle.closePath();
     ctxCircle.fill();
+  }
+
+  render(){
+    return (
+      <div>
+        <div class="map"></div>
+      </div>
+    );
   }
 }
