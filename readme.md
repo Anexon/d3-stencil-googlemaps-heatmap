@@ -27,3 +27,13 @@ npm run start
 ```
 
 And a new tab should be opened on the browser showing both componentes of the project.
+
+### Google Map script
+
+In oder to run the project with a working map you may need to get your own API Key from [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
+and create `.env` file in the root folder of the project with the following content:
+
+```
+# .env file
+GOOGLE_API_KEY = PUT_YOUR_GOOGLE_MAP_API_KEY_HERE
+```
