@@ -5,6 +5,8 @@
 This project is an example of how to integrate a custom heatmap drawn on Canvas element along with GoogleMaps. Stencil is used as demonstration of
 developing a reusable componenten for other projects.
 
+As a key difference from other heatmaps, data points may have different radius. In this case, a user database is used where each node has set his own radius as an active area so the map represents the level of coverage of a region by the users availability.
+
 ![Screenshot Gif](src/assets/readme-screenshot.png)
 
 Heatmap is drawn firstly as a gray gray scale and colorized as final step. They gray areas are drawn using an auxiliar canvas of a circle with gradiant shadow:
