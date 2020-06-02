@@ -95,7 +95,7 @@ export class AppHome {
   }
 
   generateColorGradient() {
-    var grad = {
+    let grad = {
       0.4: "blue",
       0.6: "cyan",
       0.7: "lime",
@@ -103,14 +103,14 @@ export class AppHome {
       1.0: "red",
     };
 
-    var canvas = document.createElement("canvas"),
+    let canvas = document.createElement("canvas"),
       ctx = canvas.getContext("2d"),
       gradient = ctx.createLinearGradient(0, 0, 0, 256);
 
     canvas.width = 1;
     canvas.height = 256;
 
-    for (var i in grad) {
+    for (let i in grad) {
       gradient.addColorStop(+i, grad[i]);
     }
 
@@ -121,7 +121,7 @@ export class AppHome {
   }
 
   colorize(pixels, gradient) {
-    for (var i = 0, len = pixels.length, j; i < len; i += 4) {
+    for (let i = 0, len = pixels.length, j; i < len; i += 4) {
       j = pixels[i + 3] * 4; // get gradient color from opacity value
       if (j) {
         pixels[i] = gradient[j];
@@ -177,17 +177,17 @@ export class AppHome {
   }
 
   getDistance(p1, p2) {
-    var R = 6378137; // Earth’s mean radius in meter
-    var dLat = this.toRad(p2.lat() - p1.lat());
-    var dLong = this.toRad(p2.lng() - p1.lng());
-    var a =
+    let R = 6378137; // Earth’s mean radius in meter
+    let dLat = this.toRad(p2.lat() - p1.lat());
+    let dLong = this.toRad(p2.lng() - p1.lng());
+    let a =
       Math.sin(dLat / 2) * Math.sin(dLat / 2) +
       Math.cos(this.toRad(p1.lat())) *
         Math.cos(this.toRad(p2.lat())) *
         Math.sin(dLong / 2) *
         Math.sin(dLong / 2);
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    var d = R * c;
+    let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    let d = R * c;
     return d / 1000; // returns the distance in meter
   }
 
